@@ -11,7 +11,9 @@ const initDB = (callback) => {
         return callback(null, database);
     }
 
-    MongoClient.connect(process.env.MONGO_URI)
+    MongoClient.connect(process.env.MONGO_URI, { 
+        tls: true 
+    })
     .then((client) => {
         database = client;
         callback(null, database);
