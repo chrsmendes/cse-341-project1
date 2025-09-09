@@ -1,0 +1,20 @@
+{
+  "name": "cse-341-project1",
+  "version": "1.0.0",
+  "description": "First project of the term",
+  "homepage": "https://github.com/chrsmendes/cse-341-project1#readme",
+  "bugs": {
+    "url": "https://github.com/chrsmendes/cse-341-project1/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrsmendes/cse-341-project1.git"
+  },
+  "license": "ISC",
+  "author": "Christopher Mendes",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
