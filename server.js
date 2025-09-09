@@ -12,13 +12,14 @@ app.use('/', require('./routes'));
 
 mongodb.initDB((err) => {
     if (err) {
-        console.log(err);
+        console.error('Database initialization failed:', err);
         process.exit(1);
     }
     
     console.log('Database connection ready');
-});
-
-app.listen(port, () => {
-    console.log(`Server is running ${host}:${port}`);
+    
+    // Only start the server after database is connected
+    app.listen(port, () => {
+        console.log(`Server is running ${host}:${port}`);
+    });
 });
